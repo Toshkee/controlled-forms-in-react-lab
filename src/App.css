@@ -1,42 +1,87 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+.bookshelfDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.formDiv {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: left;
+}
+
+.formDiv h3 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.formDiv label {
+  display: block;
+  margin-top: 0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #111;
+  color: #f0f0f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #6b4aff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+button:hover {
+  background-color: #826dff;
 }
 
-.read-the-docs {
-  color: #888;
+.bookCardsDiv {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bookCardsDiv div {
+  background-color: #3a3a3a;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 180px;
+}
+
+.bookCardsDiv h4 {
+  margin: 0;
+}
+
+.bookCardsDiv p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  color: #ccc;
 }
